@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
 <title>Belè Milano · Laboratorio Orafo a Porta Romana — gioielli fatti a mano</title>
 <meta name="description" content="Belè Milano è un laboratorio orafo a Porta Romana: gioielli fatti a mano al banchetto, creazioni su misura, restauri e gioielli antichi. Un mestiere di cinquant'anni, di padre in figlio.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231B1916'/><text x='50' y='70' font-size='58' text-anchor='middle' fill='%23B08A46' font-family='Georgia,serif' font-style='italic'>B</text></svg>">
 </head>
@@ -250,7 +249,7 @@
       </div>
     </div>
     <div class="mapbox">
-      <iframe title="Mappa — Belè Milano, Via Osti 6" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Bel%C3%A8+Milano,+Via+Osti+6,+Milano&output=embed"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 320px"><template><iframe title="Mappa — Belè Milano, Via Osti 6" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Bel%C3%A8+Milano,+Via+Osti+6,+Milano&output=embed"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&destination=Bel%C3%A8+Milano+Via+Osti+6+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </div>
 </section>
@@ -316,30 +315,69 @@
     </div>
     <p class="disc" data-i18n="ft.disc">Sito dimostrativo indipendente creato per mostrare una possibile presenza online per Belè Milano. Foto, recensioni e dettagli provengono da fonti pubbliche (Google Maps e il sito della bottega) e appartengono ai rispettivi proprietari. Nessuna affiliazione con la bottega.</p>
   </div>
+  <p class="privacy-link"><a href="privacy.html">Privacy</a></p>
 </footer>
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"JewelryStore",
-  "name":"Belè Milano — Laboratorio Orafo",
-  "description":"Laboratorio orafo a Porta Romana, Milano. Gioielli fatti a mano, creazioni su misura, restauri e gioielli antichi. Un mestiere di cinquant'anni, di padre in figlio.",
-  "url":"https://rotenzark.github.io/bele-milano/",
-  "telephone":"+39 349 128 2688",
-  "email":"info@belemilano.com",
-  "foundingDate":"2015",
-  "address":{"@type":"PostalAddress","streetAddress":"Via Osti 6","addressLocality":"Milano","postalCode":"20122","addressCountry":"IT"},
-  "geo":{"@type":"GeoCoordinates","latitude":45.4589524,"longitude":9.1918257},
-  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"16"},
-  "priceRange":"€€",
-  "openingHoursSpecification":[
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"19:00"}
+  "@context": "https://schema.org",
+  "@type": "JewelryStore",
+  "name": "Belè Milano — Laboratorio Orafo",
+  "description": "Laboratorio orafo a Porta Romana, Milano. Gioielli fatti a mano, creazioni su misura, restauri e gioielli antichi. Un mestiere di cinquant'anni, di padre in figlio.",
+  "url": "https://rotenzark.github.io/bele-milano/",
+  "telephone": "+39 349 128 2688",
+  "email": "info@belemilano.com",
+  "foundingDate": "2015",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Osti 6",
+    "addressLocality": "Milano",
+    "postalCode": "20122",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4589524,
+    "longitude": 9.1918257
+  },
+  "priceRange": "€€",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "10:00",
+      "closes": "19:00"
+    }
   ],
-  "makesOffer":[
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Creazioni di gioielli su misura"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Restauro e riparazione di gioielli"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gioielli antichi e d'epoca"}}
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Creazioni di gioielli su misura"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Restauro e riparazione di gioielli"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Gioielli antichi e d'epoca"
+      }
+    }
   ]
 }
 </script>
@@ -358,5 +396,6 @@
 </script>
 
 <script src="js/main.js"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
